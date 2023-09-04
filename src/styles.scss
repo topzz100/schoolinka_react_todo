@@ -1,39 +1,50 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
-
+    //overflow: hidden;
 }
-.body{
+
+.body {
     font-weight: 400;
 }
 
-.main{
-   .main-content{
-    @media(max-width: 700px){
-        position:  relative;
-    }
-        .content-body{
-           
-            .days{
+.main {
+    .main-content {
+        @media(max-width: 700px) {
+            position: relative;
+        }
+
+        .content-body {
+
+            .days {
+
                 width: 100%;
-                .days-row{
-                   overflow-x: auto;
-                    width: 100%;
+
+                .days-row {
+                    overflow-x: auto;
+
+                    //min-width: 100%;
+                    .day-box {}
 
                 }
             }
-            .calendar{
-                .calendar-container, .edit-task{
-                    box-shadow: 1px 20px 24px -4px rgba(16,24,40,0.14);
-                    -webkit-box-shadow: 1px 20px 24px -4px rgba(16,24,40,0.14);
-                    -moz-box-shadow: 1px 20px 24px -4px rgba(16,24,40,0.14);
+
+            .calendar {
+
+                .calendar-container,
+                .edit-task {
+                    box-shadow: 1px 20px 24px -4px rgba(16, 24, 40, 0.14);
+                    -webkit-box-shadow: 1px 20px 24px -4px rgba(16, 24, 40, 0.14);
+                    -moz-box-shadow: 1px 20px 24px -4px rgba(16, 24, 40, 0.14);
                 }
-                .create-task{
-                    .calendar-date{
+
+                .create-task {
+                    .calendar-date {
                         position: relative;
-                        .date-picker-wrap{
+
+                        .date-picker-wrap {
                             position: absolute;
                             top: 20px;
                             left: 0;
@@ -44,12 +55,12 @@
 
                     }
                 }
-                
-                @media(max-width: 700px){
-                    
+
+                @media(max-width: 700px) {
+
                     // position: fixed;
                     // bottom: 0;
-                     left: 0;
+                    left: 0;
                     width: 100%;
                     margin: 0;
                     padding: 0;
@@ -59,8 +70,8 @@
                     bottom: 0;
                     height: 100%;
                     background-color: rgb(0, 0, 0, 0.8);
-                   // z-index: -5555;
-                   
+                    // z-index: -5555;
+
                     // &::before{
                     //     content: "";
                     //     position: absolute;
@@ -70,7 +81,7 @@
                     //     background-color: rgb(0, 0, 0, 0.8);
                     //     z-index: -5555;
                     // }
-                    .edit-task{
+                    .edit-task {
                         margin: 0;
                         border-top-left-radius: 20px;
                         border-top-right-radius: 20px;
@@ -83,7 +94,8 @@
                         width: 100%;
                         top: 150px;
                     }
-                    .create-task{
+
+                    .create-task {
                         margin: 0;
                         border-top-left-radius: 20px;
                         border-top-right-radius: 20px;
@@ -95,11 +107,11 @@
                         left: 0;
                         width: 100%;
                         // bottom: 0;
-                        
+
                     }
                 }
             }
-        
+
+        }
     }
-   } 
 }

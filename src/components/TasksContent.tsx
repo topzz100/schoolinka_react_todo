@@ -99,7 +99,7 @@ const TasksContent = ({
     <div className="days mt-4 flex-1 basis-2/3  lg:border-r border-gray-200  pb-10">
       <h5 className="text-base font-semibold">September 2023</h5>
       <div className="days-row mt-2 flex space-x-2">
-        {dayStrings.map((day, i) => (
+        {dayStrings.slice(0, 12).map((day, i) => (
           <div
             key={i}
             className={` day-box flex flex-col justify-center border border-gray-300 w-fit items-center p-3 rounded hover:bg-[#3f5bf6] text-sm  hover:text-white font-semibold ${

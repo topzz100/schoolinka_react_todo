@@ -42,7 +42,7 @@ const Body = () => {
   }, []);
 
   return (
-    <section className="main-content containeanyr mx-auto mb-5 px-2 lg:px-20">
+    <section className="main-content container mx-auto mb-5 px-2 lg:px-20  w-full">
       <div className="header mt-4 flex justify-between ">
         <div>
           <p className="text-gray-900 text-3xl font-semibold">Good morning!</p>
@@ -58,7 +58,7 @@ const Body = () => {
           <span className="text-white text-sm">Create New Task</span>
         </button>
       </div>
-      <div className="content-body flex space-x-4  ">
+      <div className="content-body flex space-x-4 flex-1 w-full  ">
         <TasksContent
           todos={todos}
           setTodos={setTodos}
@@ -69,7 +69,7 @@ const Body = () => {
         <div
           className={`${
             actions === "calendar" && "hidden"
-          } calendar  lg:block cal basis-1/3  mt-4`}
+          } calendar  lg:block cal basis-1/3 flex-1  mt-4`}
         >
           {actions === "calendar" ? (
             <div className="calendar-container p-4 border border-gray-200">
@@ -78,7 +78,10 @@ const Body = () => {
                   <DemoItem>
                     <DateCalendar
                       value={value}
-                      onChange={(newValue) => setValue(newValue)}
+                      onChange={(newValue) => {
+                        setActions("create");
+                        setValue(newValue);
+                      }}
                     />
                   </DemoItem>
                 </DemoContainer>
