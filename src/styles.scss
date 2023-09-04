@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+
+}
+.body{
+    font-weight: 400;
+}
+
+.main{
+   .main-content{
+    @media(max-width: 700px){
+        position:  relative;
+    }
+        .content-body{
+           
+            .days{
+                width: 100%;
+                .days-row{
+                   overflow-x: auto;
+                    width: 100%;
+
+                }
+            }
+            .calendar{
+                .calendar-container, .edit-task{
+                    box-shadow: 1px 20px 24px -4px rgba(16,24,40,0.14);
+                    -webkit-box-shadow: 1px 20px 24px -4px rgba(16,24,40,0.14);
+                    -moz-box-shadow: 1px 20px 24px -4px rgba(16,24,40,0.14);
+                }
+                .create-task{
+                    .calendar-date{
+                        position: relative;
+                        .date-picker-wrap{
+                            position: absolute;
+                            top: 20px;
+                            left: 0;
+                            min-width: 100%;
+                            z-index: 555;
+                            background-color: white;
+                        }
+
+                    }
+                }
+                
+                @media(max-width: 700px){
+                    
+                    // position: fixed;
+                    // bottom: 0;
+                     left: 0;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    //top: 150px;
+                    // content: "";
+                    position: fixed;
+                    bottom: 0;
+                    height: 100%;
+                    background-color: rgb(0, 0, 0, 0.8);
+                   // z-index: -5555;
+                   
+                    // &::before{
+                    //     content: "";
+                    //     position: absolute;
+                    //     bottom: 0;
+                    //     height: 100vh;
+                    //     width: 100%;
+                    //     background-color: rgb(0, 0, 0, 0.8);
+                    //     z-index: -5555;
+                    // }
+                    .edit-task{
+                        margin: 0;
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
+                        border: none;
+                        background-color: white;
+                        height: 100%;
+                        position: fixed;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        top: 150px;
+                    }
+                    .create-task{
+                        margin: 0;
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
+                        border: none;
+                        background-color: white;
+                        //height: 100%;
+                        position: fixed;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        // bottom: 0;
+                        
+                    }
+                }
+            }
+        
+    }
+   } 
+}
